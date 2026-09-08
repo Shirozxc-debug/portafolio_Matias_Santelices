@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matias Santelices">
+    <title>Portafolio - Matias Santelices</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <!-- CAJA DE IDIOMA INDEPENDIENTE (FUERA DEL HEADER) -->
+    <div class="caja-idioma-flotante">
+        <span id="bandera">🇪🇸</span>
+        <select id="selector-idioma">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="#inicio"> &lt;/&gt; MATIAS SANTELICES</a>
+        </div>
+        <nav class="nav-links">
+            <a id="link-inicio" href="#inicio">Inicio</a>
+            <a id="link-sobre-mi" href="#sobre-mi">Sobre mí</a>
+            <a id="link-proyectos" href="#proyectos">Proyectos</a>
+            <a id="link-habilidades" href="#habilidades">Habilidades</a>
+            <a id="link-contacto" href="#contacto">Contactos</a>
+        </nav>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="contenedor-principal">
+
+        <!-- INICIO -->
+        <section id="inicio" class="caja-seccion">
+            <h2 id="txt-saludo">Hola, soy Matias 🖐</h2>
+            <h1 id="txt-titulo-profesion" class="titulo-principal">Desarrollador Frontend Junior </h1>
+            <p id="txt-descripcion-inicio" class="texto-centrado">Creo experiencias web modernas, funcionales y responsivas utilizando tecnologías frontend.</p>
+            <div class="contenedor-botones">
+                <a id="btn-ver-proyectos" href="#proyectos" class="btn">Ver proyectos -&gt;</a>
+                <a id="btn-contacto" href="#contacto" class="btn">Contactarme ✉</a>
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ -->
+        <section id="sobre-mi" class="caja-seccion">
+            <h2 id="titulo-sobre-mi" class="titulo-seccion">Sobre mí</h2>
+            <div class="tarjeta-sobre-mi">
+                <img class="imagen-usuario" src="static/images/user.png" alt="Matias Santelices">
+                <p id="txt-sobre-mi" class="texto-centrado">
+                    Soy desarrollador Frontend Junior Fronted, con pasión por crear páginas modernas y atractivas.<br>
+                    Me enfoco en escribir código limpio, aprender y convertir ideas en productos digitales.
+                </p>
+            </div>
+            <div class="contenedor-video">
+            <video controls width="100%">
+                <source src="static/videos/presentacion.mp4" type="video/mp4">
+                Tu navegador no soporta el formato de video.
+            </video>
+        </div>
+    </div>
+</section>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="caja-seccion">
+            <h2 id="titulo-proyectos" class="titulo-seccion">Proyectos</h2>
+            <p id="desc-proyectos" class="texto-centrado">Algunos proyectos que he desarrollado para practicar y mejorar mis habilidades.</p>
+            
+            <div class="contenedor-tarjetas">
+                <article class="tarjeta-proyecto">
+<!-- PROYECTO 1 -->
+<article class="tarjeta-proyecto">
+    <!-- CONTENEDOR DE LA IMAGEN DEL PROYECTO -->
+    <div class="imagen-placeholder">
+        <img src="static/images/Logo.png" alt="logo" class="img-proyecto">
+    </div>
+
+    <div class="info-proyecto">
+        <h3>JobXp</h3>
+        <p id="desc-p1">Plataforma web enfocada en mejorar la experiencia de búsqueda y compatibilidad laboral.</p>
+        <div class="tecnologias">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+        <div class="contenedor-botones">
+            <a id="btn-p1-ver" href="#" class="btn">Ver proyecto</a>
+            <a href="https://github.com/shirozxc-debug" target="_blank" class="btn-secundario">GitHub</a>
+        </div>
+    </div>
+</article>
+</section>
+
+
+<!-- HABILIDADES -->
+        <section id="habilidades" class="caja-seccion">
+            <h2 id="titulo-habilidades" class="titulo-seccion">Habilidades</h2>
+            
+            <div class="contenedor-barras">
+                <div class="habilidad-barra">
+                    <div class="habilidad-info">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="barra"><div class="progreso" style="width: 90%;"></div></div>
+                </div>
+
+                <div class="habilidad-barra">
+                    <div class="habilidad-info">
+                        <span>CSS</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="barra"><div class="progreso" style="width: 70%;"></div></div>
+                </div>
+
+                <div class="habilidad-barra">
+                    <div class="habilidad-info">
+                        <span>Bootstrap</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="barra"><div class="progreso" style="width: 40%;"></div></div>
+                </div>
+
+                <div class="habilidad-barra">
+                    <div class="habilidad-info">
+                        <span>JavaScript</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="barra"><div class="progreso" style="width: 65%;"></div></div>
+                </div>
+
+                <div class="habilidad-barra">
+                    <div class="habilidad-info">
+                        <span>MySQL</span>
+                        <span>10%</span>
+                    </div>
+                    <div class="barra"><div class="progreso" style="width: 10%;"></div></div>
+                </div>
+            </div>
+        </section>
+
+<!-- CONTACTO -->
+        <section id="contacto" class="caja-seccion">
+            <h2 id="titulo-contacto" class="titulo-seccion">Contacto</h2>
+            <p id="txt-contacto-pregunta" class="texto-centrado">¿Tienes un proyecto en mente? Hablemos y trabajemos juntos.</p>
+            <div class="espacio-boton">
+                <a id="btn-contactarme" href="mailto:matiassantelices13@gmail.com" class="btn">Contactarme ✉</a>
+            </div>
+
+            <div class="contenedor-contacto">
+                <div class="item-contacto">
+                    <img src="static/images/github.png" alt="github">
+                    <a href="https://github.com/shirozxc-debug" target="_blank">github.com/shirozxc-debug</a>
+                </div>
+                <div class="item-contacto">
+                    <img src="static/images/LinkedIn.png" alt="LinkedIn">
+                    <a href="https://www.linkedin.com/in/matias-santelices-171565412/" target="_blank">matiassantelices13@gmail.com</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p id="txt-footer">© 2026 Matias Santelices. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- SCRIPT AL FINAL -->
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
