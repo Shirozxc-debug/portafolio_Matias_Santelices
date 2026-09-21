@@ -137,10 +137,16 @@ body {
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
+    transition: transform 0.2s ease-out
 }
 
 .btn:hover {
+    transform: scale(1.08);
     background-color: #5533ad;
+}
+
+.btn:active {
+    transform: scale(0.98); 
 }
 
 .btn-secundario {
@@ -325,43 +331,4 @@ footer {
     margin: 40px 0 20px 0;
     color: #a7adbb;
     font-size: 14px;
-}
-
-@media (max-width: 768px) {
-    .caja-idioma-flotante {
-        top: 10px;
-        right: 50%;
-        transform: translateX(50%);
-    }
-
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 70px;
-        padding: 15px;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .titulo-principal {
-        font-size: 28px;
-    }
-
-    .tarjeta-proyecto {
-        width: 100%;
-    }
-
-    .contenedor-botones {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .btn, .btn-secundario {
-        width: 100%;
-        text-align: center;
-    }
 }
